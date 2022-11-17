@@ -1,0 +1,7 @@
+<h2><%= @list.name %></h2>
+
+
+<p> <%= link_to("Back to list", list_path) %> </p>
+<p> <%= link_to("Create a movie list", new_restaurant_review_path(@restaurant)) %> </p>
+<%= link_to "Delete", list_path(@list),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
